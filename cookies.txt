@@ -1,0 +1,22 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+channel.cambiumnetworks.com	TRUE	/	FALSE	1999999999	PHPSESSID	1nladqeodr5307v44g86ukk79q
+go.cambiumnetworks.com	TRUE	/	FALSE	1999999999	visitor_id428442	288925604
+go.cambiumnetworks.com	TRUE	/	FALSE	1999999999	visitor_id428442-hash	8588e880430be04a5a5146e2fc66a7d247a98c34be891176e39d08a123c6fc4800578741c1f2f61e289574d2e5a96c76f66fc98a
+go.cambiumnetworks.com	TRUE	/	FALSE	1999999999	SameSite	None
+investors.cambiumnetworks.com	TRUE	/	FALSE	1999999999	DrupalVisitorMobile	0
+channel.cambiumnetworks.com	TRUE	/	FALSE	1999999999	AWSALB	rryvL4JMJIcqKDUvVH6HtD9x3XQEzdjIJdL2UAip9ukoSRcirI8jLWT+GRPWrX2SN2A6tx2GF8i1+4vfXJ3NqaYZsCMMJZpeK886zpTrIsav5TEgYi8S57HZ3mb7
+channel.cambiumnetworks.com	TRUE	/	FALSE	1999999999	AWSALBCORS	rryvL4JMJIcqKDUvVH6HtD9x3XQEzdjIJdL2UAip9ukoSRcirI8jLWT+GRPWrX2SN2A6tx2GF8i1+4vfXJ3NqaYZsCMMJZpeK886zpTrIsav5TEgYi8S57HZ3mb7
+channel.cambiumnetworks.com	TRUE	/	FALSE	1999999999	SameSite	None
+serviceprovider.cambiumnetworks.com	TRUE	/	FALSE	1999999999	AWSALB	cmbRJ46NIBaLqcqr9qErFCMF5OIWWqWU6AQEdJ+9dy5o7MlQrS9aHGPxvv8csci4/t7pe+H6kzIeVE3RKT/qHhl5l7vwkEEhWeDDquHiLZJy2Y5tG99qd0DqcjPS
+serviceprovider.cambiumnetworks.com	TRUE	/	FALSE	1999999999	AWSALBCORS	cmbRJ46NIBaLqcqr9qErFCMF5OIWWqWU6AQEdJ+9dy5o7MlQrS9aHGPxvv8csci4/t7pe+H6kzIeVE3RKT/qHhl5l7vwkEEhWeDDquHiLZJy2Y5tG99qd0DqcjPS
+serviceprovider.cambiumnetworks.com	TRUE	/	FALSE	1999999999	PHPSESSID	uoltfec2jgqdmej1bnphsr1ifg
+serviceprovider.cambiumnetworks.com	TRUE	/	FALSE	1999999999	SameSite	Strict
+learning.cambiumnetworks.com	TRUE	/	FALSE	1999999999	AWSALB	RqPX6l5Am6fNMaklo1qll/RaI2XbBZyz5TI+QWRDPh9EMtSa25VL8xwrGuyjJO/03I5bqoPvmQqVBPM2vHgxv/Q+pbtBGejcGfWaYGggc8IAPjVnz/WR3IIYSpLy
+learning.cambiumnetworks.com	TRUE	/	FALSE	1999999999	AWSALBCORS	RqPX6l5Am6fNMaklo1qll/RaI2XbBZyz5TI+QWRDPh9EMtSa25VL8xwrGuyjJO/03I5bqoPvmQqVBPM2vHgxv/Q+pbtBGejcGfWaYGggc8IAPjVnz/WR3IIYSpLy
+learning.cambiumnetworks.com	TRUE	/	FALSE	1999999999	SameSite	None
+learning.cambiumnetworks.com	TRUE	/	FALSE	1999999999	r	use1-ecs
+go.cambiumnetworks.com	TRUE	/	FALSE	1999999999	pardot	deleted
+support.cambiumnetworks.com	TRUE	/	FALSE	1999999999	session	-PEbx7McKOirO-u6Gr-BM6jdiDeehvKxNDO4fKbfViyboFHVyV_MBeeGKuH8sH4i_LxlSJL21IAPOtOsm1Lba4AFlUkAAAAAAAAASr83KmJHQdiKjMx5Axd9lIwHX2NzcmZ0X5SMKDExMzQ3MWJhZjY3Njg3ZTFkMjNkMzk2NmViZjU0ZTczYzdmODI0MTWUc4eULg
+support.cambiumnetworks.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+

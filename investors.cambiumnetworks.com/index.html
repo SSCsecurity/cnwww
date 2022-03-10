@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  
+<!-- Mirrored from investors.cambiumnetworks.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Mar 2022 17:41:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam-cell.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"761e715901",applicationID:"32397309"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(10),c=t(11),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(9),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],10:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!P++){var t=M.info=NREUM.info,e=g.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+M.offset],null,"api"),c("timing",["load",n]);var r=g.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https:///")?r.src=t.agent:r.src=v+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===g.readyState&&o()}function o(){c("mark",["domContent",a()+M.offset],null,"api")}var a=t(5),c=t("handle"),f=t(10),u=t("ee"),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration("ssl")===!1?"http":"https",m=window,g=m.document,y="addEventListener",h="attachEvent",w=m.XMLHttpRequest,b=w&&w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,O={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1215.min.js"},T=w&&b&&b[y]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:T,userAgent:s,disabled:E};if(!E){t(1),t(7),g[y]?(g[y]("DOMContentLoaded",o,l(!1)),m[y]("load",r,l(!1))):(g[h]("onreadystatechange",i),m[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var P=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(11),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<link rel="canonical" href="https://investors.cambiumnetworks.com/investor-relations/" />
+<link rel="shortlink" href="http://investors.cambiumnetworks.com/" />
+<meta name="referrer" content="no-referrer" />
+<meta name="description" content="The Investor Relations website contains information about Cambium Networks&#039;s business for stockholders, potential investors, and financial analysts." />
+<meta property="og:site_name" content="Cambium Networks" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://investors.cambiumnetworks.com/investor-relations" />
+<meta property="og:title" content="Investor Relations | Cambium Networks" />
+<meta property="og:description" content="The Investor Relations website contains information about Cambium Networks&#039;s business for stockholders, potential investors, and financial analysts." />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://investors.cambiumnetworks.com/" />
+<link rel="revision" href="https://investors.cambiumnetworks.com/investor-relations" />
+
+    <title>Investor Relations | Cambium Networks</title>
+    <link rel="stylesheet" media="all" href="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/files/css/css_OkD1wik6k2Ys4qApdloexccVnzsuJ9yAymLL-FaZ7Io.css" />
+<link rel="stylesheet" media="all" href="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/files/css/css_jkSFQ4YrNj7CBWWMdu7VZmMnWOZd2gtauVJbPoOVQmw.css" />
+<link rel="stylesheet" media="all" href="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/css/settings.css?r7wenc" />
+<link rel="stylesheet" media="all" href="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/css/dashicons.css?r7wenc" />
+<link rel="stylesheet" media="all" href="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/css/frontend.css?r7wenc" />
+<link rel="stylesheet" media="all" href="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/css/pagenavi-css.css?r7wenc" />
+<link rel="stylesheet" media="all" href="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/css/css.css?r7wenc" />
+<link rel="stylesheet" media="all" href="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/css/style.css?r7wenc" />
+<link rel="stylesheet" media="all" href="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/css/cambium-custom.css?r7wenc" />
+<link rel="stylesheet" media="all" href="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/css/theme.css?r7wenc" />
+<link rel="stylesheet" media="print" href="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/files/css/css_AyAAXlHCHwPWPDL_46mvIF9hcLuJlyRhRsq_RC3VgC0.css" />
+<link rel="stylesheet" media="all" href="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/css/ndq-newswires.css?r7wenc" />
+<link rel="stylesheet" media="all" href="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/css/chosen/chosen-admin.css?r7wenc" />
+<link rel="stylesheet" media="all" href="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/css/ndq-bootstrap-grid.css?r7wenc" />
+<link rel="stylesheet" media="all" href="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/css/ndq-widgets.css?r7wenc" />
+<link rel="stylesheet" media="all" href="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/css/theme_styles.css?r7wenc" />
+<link rel="stylesheet" media="all" href="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/files/css/css_1-lrV02jrfsTf4agXVr5Ufs_40JEs-EItInE4Tj4tzM.css" />
+
+
+    <script src="https://investors.cambiumnetworks.com/core/assets/vendor/modernizr/modernizr.min.js?v=3.11.7"></script>
+<script src="https://investors.cambiumnetworks.com/core/misc/modernizr-additional-tests.js?v=3.11.7"></script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/js/jquery_002.js?r7wenc"></script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/js/bat.js?r7wenc"></script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/js/jquery-migrate.js?r7wenc"></script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/js/jquery_005.js?r7wenc"></script>
+
+    
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NF6NW3P');</script>
+<!-- End Google Tag Manager -->
+
+
+  </head>
+  <body class="body-sidebars-none nir-node nir-node--type-nir-landing-page nir-node--5806 page frontpage page-template-default wp-custom-logo tribe-js group-blog js ready page-node-type-nir-landing-page page guest" cz-shortcut-listen="true">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ML39XM6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div id="skip">
+      <a class="visually-hidden focusable skip-link" href="#main-menu">
+        Skip to main navigation
+      </a>
+    </div>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+    <!-- <div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-info cc-theme-block cc-bottom cc-color-override-212698608 " style="">
+        <span id="cookieconsent:desc" class="cc-message">We
+ use cookies to understand how you use your site and to improve overall
+experience. By continuing to use our site, you accept our use of
+cookies. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.cambiumnetworks.com/cookie-policy/" target="_blank">Cookie Policy</a></span>
+        <div class="cc-compliance"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">I accept</a></div>
+
+    </div> -->
+
+    <div id="page" class="site">
+        <a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+
+        <header class="site-header">
+            <div class="main-navigation-container row">
+
+                <button class="off-canvas-open hamburger" type="button" aria-expanded="false" aria-label="Open Menu">
+                    <span class="bar top"></span>
+                    <span class="bar middle"></span>
+                    <span class="bar bottom"></span>
+                </button>
+
+                <div class="site-branding">
+
+                    <a href="https://www.cambiumnetworks.com/" class="custom-logo-link" rel="home" itemprop="url"><img src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/images/cambium-logo-2x.png" class="custom-logo" alt="Cambium Networks" itemprop="logo" srcset="/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/images/cambium-logo-2x.png 492w, /sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/images/cambium-logo-2x-300x48.png 300w, /sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/images/cambium-logo-2x-375x60.png 375w, /sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/images/cambium-logo-2x-380x61.png 380w", /sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/images/cambium-logo-2x-374x60.png 374w" sizes="(max-width: 492px) 100vw, 492px" width="492" height="79"></a>
+                    <p class="site-title"><a href="https://www.cambiumnetworks.com/" rel="home">Cambium Networks</a></p>
+
+                    <p class="site-description"></p>
+                </div>
+                <!-- .site-branding -->
+
+                <nav id="site-utility-navigation" class="utility-navigation links">
+                    <div class="menu-utility-menu-container">
+                      
+    
+                
+      <ul id="utility-menu" class="menu dropdown">
+
+      
+        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+          <a  href="https://www.cambiumnetworks.com/our-company/">Company</a>
+
+                  </li>
+
+      
+        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+          <a  href="https://investors.cambiumnetworks.com/">Investors</a>
+
+                  </li>
+
+      
+        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+          <a  href="https://community.cambiumnetworks.com/">Community</a>
+
+                  </li>
+
+      
+        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+          <a  href="https://www.cambiumnetworks.com/blog/">Blog</a>
+
+                  </li>
+
+      
+        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+          <a  href="https://www.cambiumnetworks.com/partners/">Partners</a>
+
+                  </li>
+
+      
+        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+          <a  target="_blank"  href="https://cloud.cambiumnetworks.com/index.html">Login</a>
+
+                  </li>
+
+          </ul>
+  
+
+
+    
+
+
+                    </div>
+                </nav>
+                <!-- #site-utility-navigation -->
+
+                <nav id="site-navigation" class="main-navigation links">
+                    <div class="menu-main-menu-container">
+                      
+    
+                          <ul id="primary-menu" class="menu dropdown">
+    
+            
+                    <li class="menu-item menu-item-type-post_type active-list menu-item-type-custom menu-item-object-custom">
+                <a href="https://investors.cambiumnetworks.com/">Overview</a>
+
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type menu-item-has-children menu-item-type-custom menu-item-object-custom">
+                <a href="https://investors.cambiumnetworks.com/stock-quote-chart">Stock</a>
+
+                                    <ul class="sub-menu">
+    
+            
+                    <li class="menu-item menu-item-type-post_type">
+                <a href="https://investors.cambiumnetworks.com/stock-quote-chart">Stock Quote &amp; Chart</a>
+
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                <a href="https://investors.cambiumnetworks.com/stock-information/historic-price-lookup">Historic Price Lookup</a>
+
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                <a href="https://investors.cambiumnetworks.com/stock-information/investment-calculator">Investment Calculator</a>
+
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                <a href="https://investors.cambiumnetworks.com/financial-information/analyst-coverage">Analyst Coverage</a>
+
+                  </li>
+
+          </ul>
+  
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type menu-item-has-children menu-item-type-custom menu-item-object-custom">
+                <a href="https://investors.cambiumnetworks.com/news-releases">News &amp; Events</a>
+
+                                    <ul class="sub-menu">
+    
+            
+                    <li class="menu-item menu-item-type-post_type">
+                <a href="https://investors.cambiumnetworks.com/news-releases">News Releases</a>
+
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                <a href="https://investors.cambiumnetworks.com/events-and-presentations">Events and Presentations</a>
+
+                  </li>
+
+          </ul>
+  
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type menu-item-has-children menu-item-type-custom menu-item-object-custom">
+                <a href="https://investors.cambiumnetworks.com/financial-information/sec-filings">Financials</a>
+
+                                    <ul class="sub-menu">
+    
+            
+                    <li class="menu-item menu-item-type-post_type">
+                <a href="https://investors.cambiumnetworks.com/financial-information/sec-filings">SEC Filings</a>
+
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                <a href="https://cambiumnetworks.gcs-web.com/quarterly-results">Quarterly Results</a>
+
+                  </li>
+
+          </ul>
+  
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type menu-item-has-children menu-item-type-custom menu-item-object-custom">
+                <a href="https://investors.cambiumnetworks.com/corporate-governance/governance-overview">Governance</a>
+
+                                    <ul class="sub-menu">
+    
+            
+                    <li class="menu-item menu-item-type-post_type">
+                <a href="https://investors.cambiumnetworks.com/corporate-governance/governance-overview">Governance Documents</a>
+
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                <a href="https://investors.cambiumnetworks.com/corporate-governance/board-of-directors">Board of Directors</a>
+
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                <a href="https://www.cambiumnetworks.com/our-company/executive-team/">Executive Team</a>
+
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                <a href="https://investors.cambiumnetworks.com/corporate-governance/committee-composition">Committee Composition</a>
+
+                  </li>
+
+          </ul>
+  
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type menu-item-has-children menu-item-type-custom menu-item-object-custom">
+                <a href="https://investors.cambiumnetworks.com/shareholder-services/investor-faqs">Shareholder Resources</a>
+
+                                    <ul class="sub-menu">
+    
+            
+                    <li class="menu-item menu-item-type-post_type">
+                <a href="https://investors.cambiumnetworks.com/shareholder-services/investor-faqs">Investor FAQs</a>
+
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                <a href="https://investors.cambiumnetworks.com/contact-ir">Contact IR</a>
+
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                <a href="https://investors.cambiumnetworks.com/shareholder-services/email-alerts">Email Alerts</a>
+
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                <a href="https://investors.cambiumnetworks.com/shareholder-services/investor/kit">Investor Kit</a>
+
+                  </li>
+
+          </ul>
+  
+                  </li>
+
+          </ul>
+  
+
+
+    
+
+
+                    </div>
+                </nav>
+                <!-- #site-navigation -->
+
+                <a class="openBtn" onclick="openSearch()"><img src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/images/search-icon.svg" alt="Search"></a>
+                <div id="myOverlay" class="overlay" style="display: none;">
+              		<span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+                		<div class="overlay-content">
+              	    	<form method="get" action="https://www.cambiumnetworks.com/" autocomplete="on">
+              	    		<label for="search-field"><span class="screen-reader-text">To search this site, enter a search term</span></label>
+              	      		<input class="search-field" id="search-field" type="text" name="s" value="" aria-required="false" autocomplete="on" placeholder="Enter Search Term">
+              	      		<button type="submit" autocomplete="on"><img src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/images/search-icon-white.svg" alt="Search"></button>
+              	      		<span class="screen-reader-text">Submit</span>
+              	    	</form>
+                		</div>
+
+              	</div>
+
+            </div>
+            <!-- .site-header-container .row -->
+        </header>
+        <!-- .site-header -->
+
+        <!-- Get Hero. -->
+                  <section id="carousel-slider">
+            
+    
+<section  id="block-widgeteventsv2" class="block--nir-events__widget block--nir-events__widget--5806 block--hero-featured--nir-events__widget block--hero-featured--nir-events__widget--5806 block--7cefe49c-33be-4bb8-bcc5-75d5a32500c4 block--7cefe49c-33be-4bb8-bcc5-75d5a32500c4--5806 hero container hero-page background-white hero-center hero-why-cambium image-as-background block block-nir-events block-nir-events__widget">
+  <div class="flex-helper">
+       <div class="hero-content row pad-100 sidebar-adjustment-container">
+
+        <div class="hero-alignment-helper ">
+          <header class="row">
+              <div class="col-xs-12 col-s-12 col-m-6 col-l-6 slider_label">
+                <h1 class="hero-title ">
+                  Investor Relations
+                </h1>
+              </div>
+              <div class="col-xs-12 col-s-12 col-m-6 col-l-6 slider_content">
+                                  <h2></h2>
+                  <div class="nir-widget">
+      <div class="nir-widget--label">
+      Events
+    </div>
+    <div class="nir-widget--content">
+        <div class="nir-widget--list">
+              
+<article role="article" class="clearfix node node--nir-event--nir-widget-list node--type-nir-event node--view-mode-nir-widget-list">
+
+  
+      <div class="nir-widget--field nir-widgets--event--title">
+      
+<div class="field-nir-event-title">
+      <div class="field__item"><a href="https://investors.cambiumnetworks.com/events/event-details/fourth-quarter-2021-financial-results" hreflang="en">Fourth Quarter 2021 Financial Results</a></div>
+  </div>
+    </div>
+  
+      <div class="nir-widget--field nir-widget--event--date">
+      
+      
+      
+            Feb 17, 2022 at 4:30 PM EST
+      
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</article>
+
+          </div>
+    <div class="nir-widget--pager">
+      
+    </div>
+    <div class="nir-widget--total-results">
+      
+    </div>
+  </div>
+</div>
+                              </div>
+           </header>
+
+         </div><!-- .hero-alignment-helper -->
+
+       </div><!-- .masthead-content -->
+    </div><!-- .flex-helper -->
+</section>
+
+<section  id="block-widgetnewsv2" class="block--nir-news__widget block--nir-news__widget--5806 block--hero-featured--nir-news__widget block--hero-featured--nir-news__widget--5806 block--d6b55939-674c-48cb-bee3-69cbbacdf316 block--d6b55939-674c-48cb-bee3-69cbbacdf316--5806 hero container hero-page background-white hero-center hero-why-cambium image-as-background block block-nir-news block-nir-news__widget">
+  <div class="flex-helper">
+       <div class="hero-content row pad-100 sidebar-adjustment-container">
+
+        <div class="hero-alignment-helper ">
+          <header class="row">
+              <div class="col-xs-12 col-s-12 col-m-6 col-l-6 slider_label">
+                <h1 class="hero-title ">
+                  Investor Relations
+                </h1>
+              </div>
+              <div class="col-xs-12 col-s-12 col-m-6 col-l-6 slider_content">
+                                  <h2></h2>
+                  <div class="nir-widget">
+      <div class="nir-widget--label">
+      News
+    </div>
+    <div class="nir-widget--content">
+        <div class="nir-widget--list">
+              
+<article role="article" class="clearfix node node--nir-news--nir-widget-list node--type-nir-news node--view-mode-nir-widget-list node--promoted">
+
+  
+      <div class="nir-widget--field nir-widget--news--date-time">
+      March 3, 2022
+    </div>
+  
+            <div class="nir-widget--field nir-widget--news--headline">
+          <a href="https://investors.cambiumnetworks.com/news-releases/news-release-details/cambium-networks-cnheattm-20-network-planning-subscription" hreflang="en">Cambium Networks&#039; cnHeat™ 2.0 Network Planning Subscription Service Enables Fixed Wireless Broadband Network Operators to Optimize Site Performance Faster</a>
+      </div>
+      
+  
+  
+  
+  
+  
+  
+</article>
+
+          </div>
+    <div class="nir-widget--pager">
+      
+    </div>
+    <div class="nir-widget--total-results">
+      
+    </div>
+  </div>
+</div>
+                              </div>
+           </header>
+
+         </div><!-- .hero-alignment-helper -->
+
+       </div><!-- .masthead-content -->
+    </div><!-- .flex-helper -->
+</section>
+
+<section  id="block-stockquote-2" class="block--market-data-block__stock-quote block--market-data-block__stock-quote--5851 block--hero-featured--market-data-block__stock-quote block--hero-featured--market-data-block__stock-quote--5851 block--7a122ac0-53c2-487f-8b79-b950a1fa2dd7 block--7a122ac0-53c2-487f-8b79-b950a1fa2dd7--5851 hero container hero-page background-white hero-center hero-why-cambium image-as-background block block-nir-market-data-block block-market-data-block__stock-quote">
+  <div class="flex-helper">
+       <div class="hero-content row pad-100 sidebar-adjustment-container">
+
+        <div class="hero-alignment-helper ">
+          <header class="row">
+              <div class="col-xs-12 col-s-12 col-m-6 col-l-6 slider_label">
+                <h1 class="hero-title ">
+                  Investor Relations
+                </h1>
+              </div>
+              <div class="col-xs-12 col-s-12 col-m-6 col-l-6 slider_content">
+                                  <h2>Stock Quote</h2>
+                  <div class='quote-wrap user-toggle-off stock-quote__featured'>
+  <div class="quote-wrapper">
+                            <div class="stock-quote" data-exchange="">
+      <div class="exchange text-align-center"></div>
+      <div class="quote-price ">--</div>
+      <div class="stock_changes">
+        <span class=""> (%)</span>
+        | <span>Volume: 0</span>
+      </div>
+        <time>Feb 26, 2022 1:14 AM EST</time>
+        <div class="small">Copyright West LLC. Minimum 15 minutes delayed.</div>
+    </div>
+    </div>
+</div>
+
+                              </div>
+           </header>
+
+         </div><!-- .hero-alignment-helper -->
+
+       </div><!-- .masthead-content -->
+    </div><!-- .flex-helper -->
+</section>
+
+
+
+          </section>
+                <!-- .masthead -->
+
+        <div id="content" class="site-content">
+
+            <div class="wrap">
+                <div class="primary content-area">
+                    <main id="main" class="site-main">
+
+                        <article id="post-8796" class="post-8796 page type-page status-publish hentry">
+                          <div class="row" id="ndq-content">
+                            
+    <div id="block-nir-pid2734-websitenoticeblock" class="block--website-notice-block block--website-notice-block--5806 block--content--website-notice-block block--content--website-notice-block--5806 block--e7ac3161-f5c8-4b69-9e60-d2375a04a312 block--e7ac3161-f5c8-4b69-9e60-d2375a04a312--5806 block block-nir-website-notices block-website-notice-block">
+  
+    
+      
+  </div>
+<div data-drupal-messages-fallback class="hidden"></div>
+<div id="block-nir-pid2734-content" class="block--system-main-block block--system-main-block--5806 block--content--system-main-block block--content--system-main-block--5806 block--06ee6cf4-ca77-4ddf-a1ad-b59dc4b1f3bd block--06ee6cf4-ca77-4ddf-a1ad-b59dc4b1f3bd--5806 block block-system block-system-main-block">
+  
+    
+      <article class="node node--type-nir_landing_page node--view-mode-full clearfix">
+  
+      <h1>
+              Investor Relations
+          </h1>
+    
+
+  <div>
+    
+<div  class="panel-display sutro clearfix">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 radix-layouts-header panel-panel">
+        <div  class="panel-panel-inner">
+          <div class="block-region-header"><div class="block-content--nir-global-block block-content--nir-global-block--6116 block--block-contentf390be37-9ad7-4a7e-a354-7aad647bf74c block--block-contentf390be37-9ad7-4a7e-a354-7aad647bf74c--5806 block--header--block-content--f390be37-9ad7-4a7e-a354-7aad647bf74c block--header--block-content--f390be37-9ad7-4a7e-a354-7aad647bf74c--5806 block--62a3f554-e81b-4368-97e5-6d45e942029b block--62a3f554-e81b-4368-97e5-6d45e942029b--5806 block block-block-content block-block-contentf390be37-9ad7-4a7e-a354-7aad647bf74c">
+  
+      <h2>Corporate Profile</h2>
+    
+      
+            <div class="field field--name-field-nir-global-block-node field--type-entity-reference field--label-hidden field__item">  
+            <div class="clearfix text-formatted field field--name-field-nir-global-block-body field--type-text-long field--label-hidden field__item"><p>Cambium Networks is a leading global provider of wireless connectivity solutions that strengthen connections between people, places and things. Specializing in providing an end-to-end wireless fabric of reliable, scalable, secure, cloud-managed platforms that perform under demanding conditions, Cambium Networks empowers service providers and enterprise, industrial and government network operators to build intelligent edge connectivity. Headquartered outside Chicago and with R&amp;D centers in the U.S., U.K., and India, Cambium Networks sells through a range of trusted global distributors.</p></div>
+      
+</div>
+      
+  </div>
+<div class="block-content--nir-lp-block block-content--nir-lp-block--6776 block--block-contenteb8b9f64-4074-402b-9b13-0e2e2b8d7c92 block--block-contenteb8b9f64-4074-402b-9b13-0e2e2b8d7c92--5806 block--header--block-content--eb8b9f64-4074-402b-9b13-0e2e2b8d7c92 block--header--block-content--eb8b9f64-4074-402b-9b13-0e2e2b8d7c92--5806 block--0b1c2cfb-a29f-4777-9cb8-057a09e7e992 block--0b1c2cfb-a29f-4777-9cb8-057a09e7e992--5806 block block-block-content block-block-contenteb8b9f64-4074-402b-9b13-0e2e2b8d7c92">
+  
+    
+      
+            <div class="field field--name-field-nir-lp-block-node field--type-entity-reference field--label-hidden field__item">  
+            <div class="clearfix text-formatted field field--name-field-nir-lp-block-body field--type-text-long field--label-hidden field__item"><div class="wistia_responsive_padding" style="padding:450px 0 0 0;position:relative;width:100%;max-width: 700px;margin:0 auto;">
+<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe allowfullscreen="" allowtransparency="true" class="wistia_embed" frameborder="0" height="100%" mozallowfullscreen="" msallowfullscreen="" name="wistia_embed" oallowfullscreen="" scrolling="no" src="https://www.youtube.com/embed/AiA0rvlqRKU?videoFoam=true" title="Cambium Networks Corp Overview Video 07152019" webkitallowfullscreen="" width="100%" id="wistia_embed"></iframe></div>
+</div>
+<script src="https://fast.wistia.net/assets/external/E-v1.js" async=""></script></div>
+      
+</div>
+      
+  </div>
+<div class="block--nir-assets__widget block--nir-assets__widget--5806 block--header--nir-assets__widget block--header--nir-assets__widget--5806 block--db8eedc0-6b24-4284-a480-02c992da9fbf block--db8eedc0-6b24-4284-a480-02c992da9fbf--5806 block block-nir-assets block-nir-assets__widget">
+  
+    
+      <div class="nir-widget">
+      <div class="nir-widget--label">
+      Presentations
+    </div>
+    <div class="nir-widget--content">
+        <div class="nir-widget--list">
+              
+<article role="article" class="clearfix node node--nir-asset--nir-widget-list node--type-nir-asset node--view-mode-nir-widget-list">
+
+  
+      <div class="nir-widget--field nir-widgets--asset--title">
+      <span class="nir-widget--asset--title--title">
+<div class="field-nir-asset-title">
+      <div class="file file--mime-application-pdf file--application-pdf field__item"><a href="https://investors.cambiumnetworks.com/static-files/9229fa7f-d48b-4ae1-aa61-1997b1f46d90" type="application/pdf">Q1 2022 Investor Presentation</a></div>
+  </div></span>
+      <span class="nir-widget--asset--title-file-size"></span>
+    </div>
+  
+  
+  
+  
+  
+  
+
+  
+</article>
+
+          </div>
+    <div class="nir-widget--pager">
+      
+    </div>
+    <div class="nir-widget--total-results">
+      
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-6 radix-layouts-column1 panel-panel">
+        <div  class="panel-panel-inner">
+          <div class="block-region-column1"><div class="block--nir-events__widget block--nir-events__widget--5806 block--column1--nir-events__widget block--column1--nir-events__widget--5806 block--9fdc82d4-4b55-42df-a5a0-922505cf6c6e block--9fdc82d4-4b55-42df-a5a0-922505cf6c6e--5806 block block-nir-events block-nir-events__widget">
+  
+    
+      <div class="nir-widget">
+      <div class="nir-widget--label">
+      Events
+    </div>
+    <div class="nir-widget--content">
+        <div class="nir-widget--list">
+              
+<article role="article" class="clearfix node node--nir-event--nir-widget-list node--type-nir-event node--view-mode-nir-widget-list">
+
+  
+      <div class="nir-widget--field nir-widgets--event--title">
+      
+<div class="field-nir-event-title">
+      <div class="field__item"><a href="https://investors.cambiumnetworks.com/events/event-details/roth-capital-partners-annual-conference-2022" hreflang="en">ROTH Capital Partners Annual Conference 2022</a></div>
+  </div>
+    </div>
+  
+      <div class="nir-widget--field nir-widget--event--date">
+      
+      
+      
+            Mar 15, 2022
+      
+    </div>
+  
+  
+  
+      <div class="nir-widget--field nir-widget--event--add-to-calendar clearfix">
+      <div class="nir-widget--field nir-widget--event--add-to-calendar--outlook">
+        
+<div class="field-nir-event-add-calender">
+      <div class="add-outlook field__item"><a href="https://investors.cambiumnetworks.com/node/8441/ics" class="add-outlook">Add to Outlook</a></div>
+  </div>
+      </div>
+      <div class="nir-widget--field nir-widget--event--add-to-calendar--google">
+        
+<div class="field-nir-event-add-calender">
+      <div class="add-gcal field__item"><a href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=Cambium%20Networks%20-%20ROTH%20Capital%20Partners%20Annual%20Conference%202022&amp;dates=20220315T040000Z/20220315T040000Z&amp;details=Event%20Details%3A%20http%3A//investors.cambiumnetworks.com/events/event-details/roth-capital-partners-annual-conference-2022&amp;location=%20The%20Ritz%20Carlton%2C%20Laguna%20Niguel%20located%20in%20Dana%20Point%2C%20California&amp;trp=false&amp;sprop=name%3A" class="add-gcal">Add to Google Calendar</a></div>
+  </div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+</article>
+
+          </div>
+    <div class="nir-widget--pager">
+      
+    </div>
+    <div class="nir-widget--total-results">
+      
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+        </div>
+      </div>
+      <div class="col-md-6 radix-layouts-column2 panel-panel">
+        <div  class="panel-panel-inner">
+          <div class="block-region-column2"><div class="block--nir-news__widget block--nir-news__widget--5806 block--column2--nir-news__widget block--column2--nir-news__widget--5806 block--3af540cd-fdfd-4b45-b154-d5c0bb32e60c block--3af540cd-fdfd-4b45-b154-d5c0bb32e60c--5806 block block-nir-news block-nir-news__widget">
+  
+    
+      <div class="nir-widget">
+      <div class="nir-widget--label">
+      News Releases
+    </div>
+    <div class="nir-widget--content">
+        <div class="nir-widget--list">
+              
+<article role="article" class="clearfix node node--nir-news--nir-widget-list node--type-nir-news node--view-mode-nir-widget-list node--promoted">
+
+  
+      <div class="nir-widget--field nir-widget--news--date-time">
+      March 3, 2022
+    </div>
+  
+            <a class="nir-widget--accordion-toggle nir-widget--news--accordion-toggle"><a href="https://investors.cambiumnetworks.com/news-releases/news-release-details/cambium-networks-cnheattm-20-network-planning-subscription" hreflang="en">Cambium Networks&#039; cnHeat™ 2.0 Network Planning Subscription Service Enables Fixed Wireless Broadband Network Operators to Optimize Site Performance Faster</a></a>
+      
+      <div class="nir-widget--accordion-wrapper nir-widget--news--accordion">
+      <div class="nir-widget--field nir-widget--news--teaser">
+          Network operators can now optimize performance and revenue with their own heatmap plans for fixed wireless coverage. ROLLING MEADOWS, Ill. , March 3, 2022 /PRNewswire/ -- Cambium Networks  (NASDAQ: CMBM), a leading global provider of wireless networking solutions, today announced the release of
+      </div>
+    </div>
+  
+  
+      <div class="nir-widget--field nir-widget--news--addl-formats">
+
+                  <div class="nir-widget--title nir-widget--news--addl-formats--title">
+              Additional Formats
+          </div>
+                              <div class="nir-widgets-file-link">
+    <a href="https://investors.cambiumnetworks.com/node/8511/pdf" target="_blank"><span class="file-icon widget-file--application-pdf "></span>PDF Version</a>
+      </div>
+
+        
+    </div>
+  
+  
+  
+  
+</article>
+
+<article role="article" class="clearfix node node--nir-news--nir-widget-list node--type-nir-news node--view-mode-nir-widget-list node--promoted">
+
+  
+      <div class="nir-widget--field nir-widget--news--date-time">
+      February 17, 2022
+    </div>
+  
+            <a class="nir-widget--accordion-toggle nir-widget--news--accordion-toggle"><a href="https://investors.cambiumnetworks.com/news-releases/news-release-details/cambium-networks-reports-fourth-quarter-and-full-year-2021" hreflang="en">Cambium Networks Reports Fourth Quarter and Full Year 2021 Financial Results</a></a>
+      
+      <div class="nir-widget--accordion-wrapper nir-widget--news--accordion">
+      <div class="nir-widget--field nir-widget--news--teaser">
+          - Revenues of $78.7 million, increased 4% sequentially, and decreased 5% year-over-year - Enterprise Wi-Fi revenues of $25.8 million, grew 140% sequentially, and increased 136% year-over-year - Gross margin of 43.8%, non-GAAP(1) gross margin of 44.2% - Operating income of $2.9 million, non-GAAP(1)
+      </div>
+    </div>
+  
+  
+      <div class="nir-widget--field nir-widget--news--addl-formats">
+
+                  <div class="nir-widget--title nir-widget--news--addl-formats--title">
+              Additional Formats
+          </div>
+                              <div class="nir-widgets-file-link">
+    <a href="https://investors.cambiumnetworks.com/node/8491/pdf" target="_blank"><span class="file-icon widget-file--application-pdf "></span>PDF Version</a>
+      </div>
+
+        
+    </div>
+  
+  
+  
+  
+</article>
+
+<article role="article" class="clearfix node node--nir-news--nir-widget-list node--type-nir-news node--view-mode-nir-widget-list node--promoted">
+
+  
+      <div class="nir-widget--field nir-widget--news--date-time">
+      January 27, 2022
+    </div>
+  
+            <a class="nir-widget--accordion-toggle nir-widget--news--accordion-toggle"><a href="https://investors.cambiumnetworks.com/news-releases/news-release-details/cambium-networks-corporation-announces-fourth-quarter-and-full-1" hreflang="en">Cambium Networks Corporation Announces Fourth Quarter and Full Year 2021 Reporting Date</a></a>
+      
+      <div class="nir-widget--accordion-wrapper nir-widget--news--accordion">
+      <div class="nir-widget--field nir-widget--news--teaser">
+          ROLLING MEADOWS, Ill. , Jan. 27, 2022 /PRNewswire/ --  Cambium Networks Corporation (" Cambium Networks ") (NASDAQ: CMBM), a leading provider of wireless networking infrastructure solutions, today announced  that it plans to report financial results for the fourth quarter and full year 2021 ended
+      </div>
+    </div>
+  
+  
+      <div class="nir-widget--field nir-widget--news--addl-formats">
+
+                  <div class="nir-widget--title nir-widget--news--addl-formats--title">
+              Additional Formats
+          </div>
+                              <div class="nir-widgets-file-link">
+    <a href="https://investors.cambiumnetworks.com/node/8456/pdf" target="_blank"><span class="file-icon widget-file--application-pdf "></span>PDF Version</a>
+      </div>
+
+        
+    </div>
+  
+  
+  
+  
+</article>
+
+          </div>
+    <div class="nir-widget--pager">
+      
+    </div>
+    <div class="nir-widget--total-results">
+      
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-12 radix-layouts-footer panel-panel">
+        <div  class="panel-panel-inner">
+          <div class="block-region-footer"><div class="block-content--nir-global-block block-content--nir-global-block--6351 block--block-contentea5f5926-7fcf-4920-ac56-8be5b9fa19c3 block--block-contentea5f5926-7fcf-4920-ac56-8be5b9fa19c3--5806 block--footer--block-content--ea5f5926-7fcf-4920-ac56-8be5b9fa19c3 block--footer--block-content--ea5f5926-7fcf-4920-ac56-8be5b9fa19c3--5806 block--9e79b986-90ed-4dbe-8b08-917d4e688345 block--9e79b986-90ed-4dbe-8b08-917d4e688345--5806 block block-block-content block-block-contentea5f5926-7fcf-4920-ac56-8be5b9fa19c3">
+  
+    
+      
+            <div class="field field--name-field-nir-global-block-node field--type-entity-reference field--label-hidden field__item">  
+            <div class="clearfix text-formatted field field--name-field-nir-global-block-body field--type-text-long field--label-hidden field__item"><section class="block no-padding"><div>
+<div class="block__content">
+<div>
+<div class="col-l-6"><img alt="Investor Contacts" data-entity-type="file" data-entity-uuid="a9557ed9-6a44-4fa9-b49c-cf1dec4ed082" src="https://investors.cambiumnetworks.com/system/files-encrypted/nasdaq_kms/inline-images/iStock-485389930.jpg" style="margin-bottom:30px !important;" /></div>
+
+<div class="col-l-6 right-custom">
+<h3>INVESTOR CONTACTS</h3>
+
+<p><strong>Investor Relations Department</strong><br />
+Cambium Networks<br />
+Attn: Investor Relations Department<br />
+2590 N. First Street, Suite 220<br />
+San Jose, CA 95131<br />
+W: +1 (847) 264-2188<br />
+investors@CambiumNetworks.com</p>
+
+<p><strong>Institutional Investors &amp; Financial Analysts</strong><br />
+Peter Schuman, IRC<br />
+Cambium Networks Investor Relations<br />
+peter.schuman@Cambiumnetworks.com<br />
+W: +1 (847) 264-2188<br />
+M: +1 (650) 743-7948</p>
+
+<p class="pt-co-org"> </p>
+</div>
+</div>
+</div>
+</div>
+</section></div>
+      
+</div>
+      
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div><!-- /.sutro -->
+
+  </div>
+</article>
+
+  </div>
+
+
+
+                          </div>
+                            <div class="entry-content">
+                                <div class="at-above-post-page addthis_tool" data-url="https://www.cambiumnetworks.com/demo/"></div>
+                                <!-- AddThis Advanced Settings above via filter on the_content -->
+                                <!-- AddThis Advanced Settings below via filter on the_content -->
+                                <!-- AddThis Advanced Settings generic via filter on the_content -->
+                                <!-- AddThis Share Buttons above via filter on the_content -->
+                                <!-- AddThis Share Buttons below via filter on the_content -->
+                                <div class="at-below-post-page addthis_tool" data-url="https://www.cambiumnetworks.com/demo/"></div>
+                                <!-- AddThis Share Buttons generic via filter on the_content -->
+                            </div>
+                            <!-- .entry-content -->
+
+                        </article>
+                        <!-- #post-## -->
+
+                    </main>
+                    <!-- #main -->
+                </div>
+                <!-- .primary -->
+
+            </div>
+            <!-- .wrap -->
+
+        </div>
+        <!-- #content -->
+
+        <footer class="site-footer background-shark color-white">
+            <div class="row">
+
+                <div class="widget-area">
+                    <div class="footer-widgets col-l-6">
+                        <aside class="widget wdscn-email-subscription">
+                          
+    <div id="block-gbstayconnected" class="block-content--nir-global-block block-content--nir-global-block--6201 block--block-contentf0fc48cf-0cfc-49fb-8655-06ce5a934259 block--block-contentf0fc48cf-0cfc-49fb-8655-06ce5a934259--5806 block--stay-connected--block-content--f0fc48cf-0cfc-49fb-8655-06ce5a934259 block--stay-connected--block-content--f0fc48cf-0cfc-49fb-8655-06ce5a934259--5806 block--389d2380-baa3-459d-84eb-0260bf0f34d2 block--389d2380-baa3-459d-84eb-0260bf0f34d2--5806 block block-block-content block-block-contentf0fc48cf-0cfc-49fb-8655-06ce5a934259">
+  
+    
+      
+            <div class="field field--name-field-nir-global-block-node field--type-entity-reference field--label-hidden field__item">  
+            <div class="clearfix text-formatted field field--name-field-nir-global-block-body field--type-text-long field--label-hidden field__item"><h3 class="widget-title">Stay Connected</h3>
+
+<p>Keep up on our always evolving product features and technology.</p>
+
+<p>Enter your email and subscribe to our communications.</p>
+<a class="button button--primary js-form-submit form-submit" href="https://investors.cambiumnetworks.com/shareholder-services/email-alerts">Email Alerts</a></div>
+      
+</div>
+      
+  </div>
+
+
+
+                        </aside>
+                    </div>
+                    <!--.footer-widgets-->
+
+                    <div class="footer-menus col-l-6">
+                      
+    
+                
+
+              
+                    <nav class="footer-navigation col-xs-6 col-s-4 col-m-4 col-l-4">
+                  
+          <h3 class="widget-title">About Us</h3>
+            <div class="menu-container">
+              <ul class="menu menu-vertical">
+          
+                              
+
+              
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#" target="" rel="">Mission</a></li>
+          
+            
+            
+        
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.cambiumnetworks.com/our-company/executive-team/" target="" rel="">Executive Team</a></li>
+          
+            
+            
+        
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.cambiumnetworks.com/our-company/quality/" target="" rel="">Quality</a></li>
+          
+            
+            
+        
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.cambiumnetworks.com/social-responsibility/" target="" rel="">Social Responsibility</a></li>
+          
+            
+            
+              
+  
+            
+                                </ul>
+                  </div>
+              </nav>
+            
+        
+                    <nav class="footer-navigation col-xs-6 col-s-4 col-m-4 col-l-4">
+                  
+          <h3 class="widget-title">Contact Us</h3>
+            <div class="menu-container">
+              <ul class="menu menu-vertical">
+          
+                              
+
+              
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#" target="" rel="">Careers</a></li>
+          
+            
+            
+        
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.cambiumnetworks.com/our-company/industry-associations/" target="" rel="">Industry Associations</a></li>
+          
+            
+            
+        
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.cambiumnetworks.com/partners/" target="" rel="">Partners</a></li>
+          
+            
+            
+        
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.cambiumnetworks.com/contact-us/" target="" rel="">Office Locations</a></li>
+          
+            
+            
+        
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.cambiumnetworks.com/get-quote/" target="" rel="">Get Quote</a></li>
+          
+            
+            
+              
+  
+            
+                                </ul>
+                  </div>
+              </nav>
+            
+        
+                    <nav class="footer-navigation col-xs-6 col-s-4 col-m-4 col-l-4">
+                  
+          <h3 class="widget-title">Follow Us</h3>
+            <div class="menu-container">
+              <ul class="menu menu-vertical">
+          
+                              
+
+              
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.facebook.com/CambiumNetworks/" target="_blank" rel="" class="social-menu">Facebook</a></li>
+          
+            
+            
+        
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.youtube.com/user/CambiumNetworksLtd" target="_blank" rel="" class="social-menu">Youtube</a></li>
+          
+            
+            
+        
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://twitter.com/CambiumNetworks" target="_blank" rel="" class="social-menu">Twitter</a></li>
+          
+            
+            
+        
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.instagram.com/cambiumnetworks/" target="_blank" rel="" class="social-menu">Instagram</a></li>
+          
+            
+            
+        
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://www.linkedin.com/company/cambium-networks" target="_blank" rel="" class="social-menu">Linkedin</a></li>
+          
+            
+            
+              
+  
+            
+                                </ul>
+                  </div>
+              </nav>
+            
+              
+  
+
+
+    
+
+
+                    </div>
+                    <!-- .footer-menus -->
+                </div>
+                <!-- .widget-area -->
+            </div>
+            <!-- .row -->
+
+            <div class="site-info full-width color-sand">
+                <div class="row row-flex">
+                    <div class="footer-logo"><img src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/images/CAM_Footer_logo-112x112_2-56x56.png" class="logo logo-footer" alt="" width="56" height="56"></div> <span class="copyright-text">Copyright &copy; 2022 Cambium Networks, Ltd. All rights reserved. </span>
+                    <div class="disclosure-links">
+                      
+    
+                
+                        <a href="https://www.cambiumnetworks.com/terms-and-conditions/">Company Terms and Conditions</a>
+          <span  class="pipe">|</span>
+          
+                        <a href="https://www.cambiumnetworks.com/privacy-policy/">Privacy Policy</a>
+          <span  class="pipe">|</span>
+          
+                        <a href="https://www.cambiumnetworks.com/cookie-policy/">Cookie Policy</a>
+          <span  class="pipe">|</span>
+          
+                        <a href="https://www.cambiumnetworks.com/legal-terms/">Legal Terms</a>
+          <span  class="pipe last">|</span>
+          
+      
+  
+
+
+    
+
+
+                    </div>
+                </div>
+                <!-- .row -->
+            </div>
+        </footer>
+        <!-- .site-footer -->
+    </div>
+
+
+    <!-- #page -->
+    <nav class="off-canvas-container background-white" aria-hidden="true">
+        <div class="off-canvas-content">
+            <div class="menu-main-menu-container">
+              
+    
+                          <ul id="mobile-menu" class="mobile-menu">
+    
+            
+                    <li class="menu-item menu-item-type-post_type active-list menu-item-type-custom menu-item-object-custom">
+                        <a href="https://investors.cambiumnetworks.com/">Overview</a>
+                            </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type menu-item-has-children menu-item-type-custom menu-item-object-custom">
+                        <button type="button" aria-expanded="false" class="parent-indicator" aria-label="Open submenu">
+            <span class="down-arrow"></span></button><a href="https://investors.cambiumnetworks.com/stock-quote-chart">Stock</a>
+                                              <ul class="sub-menu">
+    
+            
+                    <li class="menu-item menu-item-type-post_type">
+                        <a href="https://investors.cambiumnetworks.com/stock-quote-chart">Stock Quote &amp; Chart</a>
+                            </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                        <a href="https://investors.cambiumnetworks.com/stock-information/historic-price-lookup">Historic Price Lookup</a>
+                            </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                        <a href="https://investors.cambiumnetworks.com/stock-information/investment-calculator">Investment Calculator</a>
+                            </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                        <a href="https://investors.cambiumnetworks.com/financial-information/analyst-coverage">Analyst Coverage</a>
+                            </li>
+
+          </ul>
+  
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type menu-item-has-children menu-item-type-custom menu-item-object-custom">
+                        <button type="button" aria-expanded="false" class="parent-indicator" aria-label="Open submenu">
+            <span class="down-arrow"></span></button><a href="https://investors.cambiumnetworks.com/news-releases">News &amp; Events</a>
+                                              <ul class="sub-menu">
+    
+            
+                    <li class="menu-item menu-item-type-post_type">
+                        <a href="https://investors.cambiumnetworks.com/news-releases">News Releases</a>
+                            </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                        <a href="https://investors.cambiumnetworks.com/events-and-presentations">Events and Presentations</a>
+                            </li>
+
+          </ul>
+  
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type menu-item-has-children menu-item-type-custom menu-item-object-custom">
+                        <button type="button" aria-expanded="false" class="parent-indicator" aria-label="Open submenu">
+            <span class="down-arrow"></span></button><a href="https://investors.cambiumnetworks.com/financial-information/sec-filings">Financials</a>
+                                              <ul class="sub-menu">
+    
+            
+                    <li class="menu-item menu-item-type-post_type">
+                        <a href="https://investors.cambiumnetworks.com/financial-information/sec-filings">SEC Filings</a>
+                            </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                        <a href="https://cambiumnetworks.gcs-web.com/quarterly-results">Quarterly Results</a>
+                            </li>
+
+          </ul>
+  
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type menu-item-has-children menu-item-type-custom menu-item-object-custom">
+                        <button type="button" aria-expanded="false" class="parent-indicator" aria-label="Open submenu">
+            <span class="down-arrow"></span></button><a href="https://investors.cambiumnetworks.com/corporate-governance/governance-overview">Governance</a>
+                                              <ul class="sub-menu">
+    
+            
+                    <li class="menu-item menu-item-type-post_type">
+                        <a href="https://investors.cambiumnetworks.com/corporate-governance/governance-overview">Governance Documents</a>
+                            </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                        <a href="https://investors.cambiumnetworks.com/corporate-governance/board-of-directors">Board of Directors</a>
+                            </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                        <a href="https://www.cambiumnetworks.com/our-company/executive-team/">Executive Team</a>
+                            </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                        <a href="https://investors.cambiumnetworks.com/corporate-governance/committee-composition">Committee Composition</a>
+                            </li>
+
+          </ul>
+  
+                  </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type menu-item-has-children menu-item-type-custom menu-item-object-custom">
+                        <button type="button" aria-expanded="false" class="parent-indicator" aria-label="Open submenu">
+            <span class="down-arrow"></span></button><a href="https://investors.cambiumnetworks.com/shareholder-services/investor-faqs">Shareholder Resources</a>
+                                              <ul class="sub-menu">
+    
+            
+                    <li class="menu-item menu-item-type-post_type">
+                        <a href="https://investors.cambiumnetworks.com/shareholder-services/investor-faqs">Investor FAQs</a>
+                            </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                        <a href="https://investors.cambiumnetworks.com/contact-ir">Contact IR</a>
+                            </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                        <a href="https://investors.cambiumnetworks.com/shareholder-services/email-alerts">Email Alerts</a>
+                            </li>
+
+            
+                    <li class="menu-item menu-item-type-post_type">
+                        <a href="https://investors.cambiumnetworks.com/shareholder-services/investor/kit">Investor Kit</a>
+                            </li>
+
+          </ul>
+  
+                  </li>
+
+          </ul>
+  
+
+
+    
+
+
+            </div>
+
+        </div>
+        <!-- .off-canvas-content -->
+    </nav>
+
+  </div>
+
+    
+          <script type="text/javascript">var s_CCSWebHostingAccount = "trcgcambium";</script>
+        <script>
+      function openSearch() {
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function closeSearch() {
+        document.getElementById("myOverlay").style.display = "none";
+      }
+    </script>
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/5806","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"classy\/node,nir_analytics\/nir_analytics.adobe_launch,nir_analytics\/nir_analytics.adobe_prod,nir_base\/lib,nir_base\/nir_icons,nir_base\/nir_toolbar,nir_base\/sidr,nir_ckeditor_datatables\/datatables,nir_market_data_block\/nir_market_data_block.command,nir_market_data_block\/nir_market_data_block.stockQuote,nir_multimedia\/nir_multimedia,nir_pid2734\/client-footer,nir_pid2734\/client-header,nir_pid2734\/override,nir_website_notices\/nir_website_notices.notices,radix_layouts\/radix_layouts,system\/base","theme":"nir_pid2734","theme_token":null},"ajaxTrustedUrl":[],"user":{"uid":0,"permissionsHash":"5b4d06f335b018db1c95d668d74a2fa9ceca37076f093f1ea262ea33d74e273c"}}</script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/files/js/js_1HjNlK4LWdKMF6JiQFotSqgCawzhbe1axGlzzaC1cXQ.js"></script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/js/jquery_003.js?r7wenc"></script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/js/jquery.js?r7wenc"></script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/js/frontend.js?r7wenc"></script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/js/project.js?r7wenc"></script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/js/jquery_006.js?r7wenc"></script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/js/jquery_004.js?r7wenc"></script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/js/core.js?r7wenc"></script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/js/position.js?r7wenc"></script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/js/pum-site-scripts.js?r7wenc"></script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/js/api.js?r7wenc"></script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/js/theme.js?v=9.2.13"></script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/js/ndq-functions.js?v=9.2.13"></script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/js/owl-slider.js?v=9.2.13"></script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/js/owl.carousel.js?v=9.2.13"></script>
+<script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/files/js/js_Qiwnw8an-wVc7z6OgJHtSKSOpBlLdKmdx-pDjiqbJQk.js"></script>
+<script src="http://assets.adobedtm.com/898335afd880/c52ee8aa1e90/launch-5ef258dce664.min.js" async></script>
+
+    
+
+        <script>
+            (function(body) {
+                'use strict';
+                body.className = body.className.replace(/\btribe-no-js\b/, 'tribe-js');
+            })(document.body);
+        </script>
+        <script type="text/javascript">
+            <!--
+            piCId = '5529';
+            piAId = '429442';
+
+            piHostname = 'pi.pardot.com';
+
+            (function() {
+                function async_load() {
+                    var s = document.createElement('script');
+                    s.type = 'text/javascript';
+                    s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+                    var c = document.getElementsByTagName('script')[0];
+                    c.parentNode.insertBefore(s, c);
+                }
+                if (window.attachEvent) {
+                    window.attachEvent('onload', async_load);
+                } else {
+                    window.addEventListener('load', async_load, false);
+                }
+            })();
+            -->
+        </script>
+        <script>
+            /* <![CDATA[ */
+            var tribe_l10n_datatables = {
+                "aria": {
+                    "sort_ascending": ": activate to sort column ascending",
+                    "sort_descending": ": activate to sort column descending"
+                },
+                "length_menu": "Show _MENU_ entries",
+                "empty_table": "No data available in table",
+                "info": "Showing _START_ to _END_ of _TOTAL_ entries",
+                "info_empty": "Showing 0 to 0 of 0 entries",
+                "info_filtered": "(filtered from _MAX_ total entries)",
+                "zero_records": "No matching records found",
+                "search": "Search:",
+                "all_selected_text": "All items on this page were selected. ",
+                "select_all_link": "Select all pages",
+                "clear_selection": "Clear Selection.",
+                "pagination": {
+                    "all": "All",
+                    "next": "Next",
+                    "previous": "Previous"
+                },
+                "select": {
+                    "rows": {
+                        "0": "",
+                        "_": ": Selected %d rows",
+                        "1": ": Selected 1 row"
+                    }
+                },
+                "datepicker": {
+                    "dayNames": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                    "dayNamesShort": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+                    "dayNamesMin": ["S", "M", "T", "W", "T", "F", "S"],
+                    "monthNames": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+                    "monthNamesShort": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+                    "nextText": "Next",
+                    "prevText": "Prev",
+                    "currentText": "Today",
+                    "closeText": "Done"
+                }
+            };
+            var tribe_system_info = {
+                "sysinfo_optin_nonce": "a1521114b7",
+                "clipboard_btn_text": "Copy to clipboard",
+                "clipboard_copied_text": "System info copied",
+                "clipboard_fail_text": "Press \"Cmd + C\" to copy"
+            }; /* ]]> */
+        </script>
+        <script data-cfasync="false" type="text/javascript">
+            if (window.addthis_product === undefined) {
+                window.addthis_product = "wpp";
+            }
+            if (window.wp_product_version === undefined) {
+                window.wp_product_version = "wpp-6.1.5";
+            }
+            if (window.wp_blog_version === undefined) {
+                window.wp_blog_version = "4.9.6";
+            }
+            if (window.addthis_share === undefined) {
+                window.addthis_share = {};
+            }
+            if (window.addthis_config === undefined) {
+                window.addthis_config = {
+                    "data_track_clickback": true,
+                    "ignore_server_config": true,
+                    "ui_atversion": "300"
+                };
+            }
+            if (window.addthis_layers === undefined) {
+                window.addthis_layers = {};
+            }
+            if (window.addthis_layers_tools === undefined) {
+                window.addthis_layers_tools = [{
+                    "responsiveshare": {
+                        "numPreferredServices": 5,
+                        "counts": "one",
+                        "size": "20px",
+                        "style": "responsive",
+                        "shareCountThreshold": 0,
+                        "services": "facebook,google_plusone_share,linkedin,twitter",
+                        "elements": ".addthis_inline_share_toolbox_below",
+                        "id": "responsiveshare"
+                    }
+                }];
+            } else {
+                window.addthis_layers_tools.push({
+                    "responsiveshare": {
+                        "numPreferredServices": 5,
+                        "counts": "one",
+                        "size": "20px",
+                        "style": "responsive",
+                        "shareCountThreshold": 0,
+                        "services": "facebook,google_plusone_share,linkedin,twitter",
+                        "elements": ".addthis_inline_share_toolbox_below",
+                        "id": "responsiveshare"
+                    }
+                });
+            }
+            if (window.addthis_plugin_info === undefined) {
+                window.addthis_plugin_info = {
+                    "info_status": "enabled",
+                    "cms_name": "WordPress",
+                    "plugin_name": "Share Buttons by AddThis",
+                    "plugin_version": "6.1.5",
+                    "plugin_mode": "WordPress",
+                    "anonymous_profile_id": "wp-eb15a2412763579fb0412f5ea656d252",
+                    "page_info": {
+                        "template": "pages",
+                        "post_type": ""
+                    },
+                    "sharing_enabled_on_post_via_metabox": false
+                };
+            }
+            (function() {
+                var first_load_interval_id = setInterval(function() {
+                    if (typeof window.addthis !== 'undefined') {
+                        window.clearInterval(first_load_interval_id);
+                        if (typeof window.addthis_layers !== 'undefined' && Object.getOwnPropertyNames(window.addthis_layers).length > 0) {
+                            window.addthis.layers(window.addthis_layers);
+                        }
+                        if (Array.isArray(window.addthis_layers_tools)) {
+                            for (i = 0; i < window.addthis_layers_tools.length; i++) {
+                                window.addthis.layers(window.addthis_layers_tools[i]);
+                            }
+                        }
+                    }
+                }, 1000)
+            }());
+        </script>
+
+
+        <script type="text/javascript">
+            /* <![CDATA[ */
+            var pum_vars = {
+                "version": "1.7.28",
+                "ajaxurl": "https:\/\/www.cambiumnetworks.com\/wp-admin\/admin-ajax.php",
+                "restapi": "https:\/\/www.cambiumnetworks.com\/wp-json\/pum\/v1",
+                "rest_nonce": null,
+                "default_theme": "7354",
+                "debug_mode": "",
+                "disable_tracking": "1",
+                "home_url": "\/",
+                "message_position": "top",
+                "core_sub_forms_enabled": "1",
+                "popups": []
+            };
+            var ajaxurl = "https://investors.cambiumnetworks.com/\/\/www.cambiumnetworks.com\/wp-admin\/admin-ajax.php";
+            var pum_debug_vars = {
+                "debug_mode_enabled": "Popup Maker: Debug Mode Enabled",
+                "debug_started_at": "Debug started at:",
+                "debug_more_info": "For more information on how to use this information visit https:\/\/docs.wppopupmaker.com\/?utm_medium=js-debug-info&utm_campaign=ContextualHelp&utm_source=browser-console&utm_content=more-info",
+                "global_info": "Global Information",
+                "localized_vars": "Localized variables",
+                "popups_initializing": "Popups Initializing",
+                "popups_initialized": "Popups Initialized",
+                "single_popup_label": "Popup: #",
+                "theme_id": "Theme ID: ",
+                "label_method_call": "Method Call:",
+                "label_method_args": "Method Arguments:",
+                "label_popup_settings": "Settings",
+                "label_triggers": "Triggers",
+                "label_cookies": "Cookies",
+                "label_delay": "Delay:",
+                "label_conditions": "Conditions",
+                "label_cookie": "Cookie:",
+                "label_settings": "Settings:",
+                "label_selector": "Selector:",
+                "label_mobile_disabled": "Mobile Disabled:",
+                "label_tablet_disabled": "Tablet Disabled:",
+                "label_event": "Event: %s",
+                "triggers": {
+                    "click_open": "Click Open",
+                    "auto_open": "Time Delay \/ Auto Open"
+                },
+                "cookies": {
+                    "on_popup_close": "On Popup Close",
+                    "on_popup_open": "On Popup Open",
+                    "pum_sub_form_success": "Subscription Form: Successful",
+                    "pum_sub_form_already_subscribed": "Subscription Form: Already Subscribed",
+                    "manual": "Manual JavaScript",
+                    "gforms_form_success": "Gravity Form Success"
+                }
+            };
+            var pum_sub_vars = {
+                "ajaxurl": "https:\/\/www.cambiumnetworks.com\/wp-admin\/admin-ajax.php",
+                "message_position": "top"
+            };
+            var pum_popups = {
+                "pum-9220": {
+                    "disable_form_reopen": false,
+                    "disable_on_mobile": false,
+                    "disable_on_tablet": false,
+                    "custom_height_auto": false,
+                    "scrollable_content": false,
+                    "position_from_trigger": false,
+                    "position_fixed": false,
+                    "overlay_disabled": false,
+                    "stackable": false,
+                    "disable_reposition": false,
+                    "close_on_overlay_click": false,
+                    "close_on_esc_press": false,
+                    "close_on_f4_press": false,
+                    "triggers": [{
+                        "type": "click_open",
+                        "settings": {
+                            "extra_selectors": ".video1"
+                        }
+                    }],
+                    "theme_id": "7355",
+                    "size": "medium",
+                    "responsive_min_width": "0%",
+                    "responsive_max_width": "100%",
+                    "custom_width": "640px",
+                    "custom_height": "380px",
+                    "animation_type": "fade",
+                    "animation_speed": "350",
+                    "animation_origin": "center top",
+                    "location": "center top",
+                    "position_top": "100",
+                    "position_bottom": "0",
+                    "position_left": "0",
+                    "position_right": "0",
+                    "zindex": "1999999999",
+                    "close_button_delay": "0",
+                    "cookies": [],
+                    "id": 9220,
+                    "slug": "what-is-front-to-back-ratio"
+                },
+                "pum-9218": {
+                    "disable_form_reopen": false,
+                    "disable_on_mobile": false,
+                    "disable_on_tablet": false,
+                    "custom_height_auto": false,
+                    "scrollable_content": false,
+                    "position_from_trigger": false,
+                    "position_fixed": false,
+                    "overlay_disabled": false,
+                    "stackable": false,
+                    "disable_reposition": false,
+                    "close_on_overlay_click": false,
+                    "close_on_esc_press": false,
+                    "close_on_f4_press": false,
+                    "triggers": [{
+                        "type": "click_open",
+                        "settings": {
+                            "extra_selectors": ".video2"
+                        }
+                    }],
+                    "theme_id": "7355",
+                    "size": "medium",
+                    "responsive_min_width": "0%",
+                    "responsive_max_width": "100%",
+                    "custom_width": "640px",
+                    "custom_height": "380px",
+                    "animation_type": "fade",
+                    "animation_speed": "350",
+                    "animation_origin": "center top",
+                    "location": "center top",
+                    "position_top": "100",
+                    "position_bottom": "0",
+                    "position_left": "0",
+                    "position_right": "0",
+                    "zindex": "1999999999",
+                    "close_button_delay": "0",
+                    "cookies": [],
+                    "id": 9218,
+                    "slug": "what-is-beamforming"
+                },
+                "pum-9216": {
+                    "disable_form_reopen": false,
+                    "disable_on_mobile": false,
+                    "disable_on_tablet": false,
+                    "custom_height_auto": false,
+                    "scrollable_content": false,
+                    "position_from_trigger": false,
+                    "position_fixed": false,
+                    "overlay_disabled": false,
+                    "stackable": false,
+                    "disable_reposition": false,
+                    "close_on_overlay_click": false,
+                    "close_on_esc_press": false,
+                    "close_on_f4_press": false,
+                    "triggers": [{
+                        "type": "click_open",
+                        "settings": {
+                            "extra_selectors": ".video3"
+                        }
+                    }],
+                    "theme_id": "7355",
+                    "size": "medium",
+                    "responsive_min_width": "0%",
+                    "responsive_max_width": "100%",
+                    "custom_width": "640px",
+                    "custom_height": "380px",
+                    "animation_type": "fade",
+                    "animation_speed": "350",
+                    "animation_origin": "center top",
+                    "location": "center top",
+                    "position_top": "100",
+                    "position_bottom": "0",
+                    "position_left": "0",
+                    "position_right": "0",
+                    "zindex": "1999999999",
+                    "close_button_delay": "0",
+                    "cookies": [],
+                    "id": 9216,
+                    "slug": "synchronization-and-interference-mitigation"
+                },
+                "pum-9209": {
+                    "disable_form_reopen": false,
+                    "disable_on_mobile": false,
+                    "disable_on_tablet": false,
+                    "custom_height_auto": false,
+                    "scrollable_content": false,
+                    "position_from_trigger": false,
+                    "position_fixed": false,
+                    "overlay_disabled": false,
+                    "stackable": false,
+                    "disable_reposition": false,
+                    "close_on_overlay_click": false,
+                    "close_on_esc_press": false,
+                    "close_on_f4_press": false,
+                    "triggers": [{
+                        "type": "click_open",
+                        "settings": {
+                            "extra_selectors": ".video4"
+                        }
+                    }],
+                    "theme_id": "7355",
+                    "size": "medium",
+                    "responsive_min_width": "0%",
+                    "responsive_max_width": "100%",
+                    "custom_width": "640px",
+                    "custom_height": "380px",
+                    "animation_type": "fade",
+                    "animation_speed": "350",
+                    "animation_origin": "center top",
+                    "location": "center top",
+                    "position_top": "100",
+                    "position_bottom": "0",
+                    "position_left": "0",
+                    "position_right": "0",
+                    "zindex": "1999999999",
+                    "close_button_delay": "0",
+                    "cookies": [],
+                    "id": 9209,
+                    "slug": "epmp2000-rural-urban-applications"
+                },
+                "pum-9173": {
+                    "disable_form_reopen": false,
+                    "disable_on_mobile": false,
+                    "disable_on_tablet": false,
+                    "custom_height_auto": false,
+                    "scrollable_content": false,
+                    "position_from_trigger": false,
+                    "position_fixed": false,
+                    "overlay_disabled": false,
+                    "stackable": false,
+                    "disable_reposition": false,
+                    "close_on_overlay_click": false,
+                    "close_on_esc_press": false,
+                    "close_on_f4_press": false,
+                    "triggers": [{
+                        "type": "click_open",
+                        "settings": {
+                            "cookie_name": "",
+                            "extra_selectors": "#download-case-study"
+                        }
+                    }],
+                    "theme_id": "7356",
+                    "size": "tiny",
+                    "responsive_min_width": "0%",
+                    "responsive_max_width": "100%",
+                    "custom_width": "640px",
+                    "custom_height": "380px",
+                    "animation_type": "fade",
+                    "animation_speed": "350",
+                    "animation_origin": "center top",
+                    "location": "center top",
+                    "position_top": "50",
+                    "position_bottom": "0",
+                    "position_left": "0",
+                    "position_right": "0",
+                    "zindex": "1999999999",
+                    "close_button_delay": "0",
+                    "cookies": [],
+                    "id": 9173,
+                    "slug": "wi-fi-now-2018"
+                }
+            };
+            /* ]]> */
+        </script>
+
+        <script type="text/javascript">
+            (function($) {
+                $(document).bind('gform_post_render', function() {
+                    var gfRecaptchaPoller = setInterval(function() {
+                        if (!window.grecaptcha || !window.grecaptcha.render) {
+                            return;
+                        }
+                        renderRecaptcha();
+                        clearInterval(gfRecaptchaPoller);
+                    }, 100);
+                });
+            })(jQuery);
+        </script>
+
+        <script type="text/javascript">
+            (function($) {
+                $(document).bind('gform_post_render', function() {
+                    var gfRecaptchaPoller = setInterval(function() {
+                        if (!window.grecaptcha || !window.grecaptcha.render) {
+                            return;
+                        }
+                        renderRecaptcha();
+                        clearInterval(gfRecaptchaPoller);
+                    }, 100);
+                });
+            })(jQuery);
+        </script>
+
+
+        <link rel="stylesheet" type="text/css" href="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/css/cookieconsent.css">
+        <script src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/js/cookieconsent.js"></script><img src="https://investors.cambiumnetworks.com/sites/g/files/knoqqb31481/themes/site/nir_pid2734/client/images/62i9.gif" style="display:none !important; visibility:hidden !important;" width="1" hidden="true" height="1">
+        <script>
+            window.addEventListener("load", function() {
+                window.cookieconsent.initialise({
+                    "palette": {
+                        "popup": {
+                            "background": "#51a4f5"
+                        },
+                        "button": {
+                            "background": "transparent",
+                            "text": "#fff",
+                            "border": "#fff"
+                        }
+                    },
+                    "content": {
+                        "message": "We use cookies to understand how you use your site and to improve overall experience. By continuing to use our site, you accept our use of cookies.",
+                        "dismiss": "I accept",
+                        "link": "Cookie Policy",
+                        "href": "https://www.cambiumnetworks.com/cookie-policy/"
+                    }
+                })
+            });
+        </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"761e715901","applicationID":"32397309,24276188","transactionName":"ZlVXYRcAW0ZRW0QKX18fdFYRCFpbH3xCFkBQXGlbCgVQaXNXXhdCXlxZUBc9e1pUXWYKVUZzWlsRE1pZXF1CTg5HWVBC","queueTime":0,"applicationTime":426,"atts":"ShJUF18aSEg=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from investors.cambiumnetworks.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Mar 2022 17:41:27 GMT -->
+</html>

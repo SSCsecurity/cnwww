@@ -1,0 +1,18 @@
+ .store_locator_fax{display:none;} .store_locator_distance{display:none;} .store_locator_mobile{display:none;} .store_locator_website{display:none;}#store_locator_filter_active_filter_box{display:none;}#store_locator_filter{display:none;} .store_locator_get_direction{display:none !important;} .store_locator_call_now{display:none !important;} .store_locator_visit_website{display:none !important;} .store_locator_write_email{display:none !important;} .store_locator_show_on_map{display:none !important;} .store_locator_image{display:none !important;} .store_locator_loading{background-color:#FFFFFF;opacity: 0.8;} .store_locator_loading i{color:#000000;} .gm-style-iw, .store_locator_infowindow{max-width: 320px !important; width: 100% !important; max-height: 400px; white-space: nowrap; overflow: auto;}@media (min-width: 1200px){
+.store-locator-col-lg-6 {
+    width: 49%;
+}
+}
+
+@media (max-width: 1199px){
+.store_locator_search_box .store-locator-row {
+    margin-top:20px;
+    margin-left:0px;
+    margin-right:0px;
+}
+
+.single_filter {
+    padding-top:20px;
+    padding-bottom:20px;
+}
+}

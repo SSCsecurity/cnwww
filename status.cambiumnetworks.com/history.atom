@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
+  <id>tag:status.cambiumnetworks.com,2005:/history</id>
+  <link rel="alternate" type="text/html" href="https://status.cambiumnetworks.com"/>
+  <link rel="self" type="application/atom+xml" href="https://status.cambiumnetworks.com/history.atom"/>
+  <title>Cambium Networks Status - Incident history</title>
+  <updated>2021-06-02T00:00:00.000+00:00</updated>
+  <author>
+    <name>Cambium Networks</name>
+  </author>
+  
+<entry>
+  <id>tag:status.cambiumnetworks.com,2005:Maintenance/ckp86nkc49841089kolmppdeilm</id>
+  <published>2021-06-02T00:00:00.000+00:00</published>
+  <updated>2021-06-02T00:00:00.000+00:00</updated>
+  <link rel="alternate" type="text/html" href="https://status.cambiumnetworks.com/maintenance/ckp86nkc49841089kolmppdeilm"/>
+  <title>Updates to cnMaestro</title>
+
+  <content type="html">
+  <p><small>Jun <var data-var='date'> 2</var>, <var data-var='time'>00:00:00</var> GMT+0</small><br /><strong>Identified</strong> -
+  Maintenance is now in progress..</p>
+<p><small>Jun <var data-var='date'> 2</var>, <var data-var='time'>00:00:00</var> GMT+0</small><br /><strong>Completed</strong> -
+  Maintenance has completed successfully..</p>
+<p><small>Jun <var data-var='date'> 2</var>, <var data-var='time'>00:00:00</var> GMT+0</small><br /><strong>Identified</strong> -
+  On 2 June 2021 between 0100 and 0300 UTC cnMaestro cloud will be updated. During this time we do not expect any disruption to service, but some devices may disconnect and reconnect..</p>
+
+  </content>
+</entry>
+
+<entry>
+  <id>tag:status.cambiumnetworks.com,2005:Maintenance/ckp875z3h11867979kolzutul5oi</id>
+  <published>2021-07-08T00:00:00.000+00:00</published>
+  <updated>2021-07-08T00:00:00.000+00:00</updated>
+  <link rel="alternate" type="text/html" href="https://status.cambiumnetworks.com/maintenance/ckp875z3h11867979kolzutul5oi"/>
+  <title>Website Update</title>
+
+  <content type="html">
+  <p><small>Jul <var data-var='date'> 8</var>, <var data-var='time'>00:00:00</var> GMT+0</small><br /><strong>Identified</strong> -
+  On 8 July 2021 at 0100 UTC, www.cambiumnetworks.com will be updated. The service may be interrupted for up to 5 minutes..</p>
+<p><small>Jul <var data-var='date'> 8</var>, <var data-var='time'>00:00:00</var> GMT+0</small><br /><strong>Identified</strong> -
+  Maintenance is now in progress..</p>
+<p><small>Jul <var data-var='date'> 8</var>, <var data-var='time'>00:00:00</var> GMT+0</small><br /><strong>Completed</strong> -
+  Maintenance has completed successfully..</p>
+
+  </content>
+</entry>
+
+</feed>

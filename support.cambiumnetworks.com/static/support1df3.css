@@ -1,0 +1,178 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding-top: 0px;
+    background: none repeat scroll 0 0 #EFEFEF;
+    background: white;
+    overflow-y: scroll;
+    margin-bottom: 7em;
+    font-family: "Open Sans",Arial,sans-serif;
+}
+
+.navbar-default {
+    background: none;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.form-group {
+    max-width: 500px;
+}
+
+.cs-wide-form .form-group {
+    max-width: 100%;
+}
+
+.deform p.has-error {
+    margin-top: 8px;
+}
+
+.well {
+    background: none repeat scroll 0 0 #FFF;
+}
+
+.list-group {
+    font-size: 0.9em;
+}
+
+.navbar-nav > ul > li > a {
+    border-bottom: 4px solid transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    background: #eee;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-nav li.active > a, .navbar-default .navbar-nav > .active > a:focus {
+    background: none ;
+}
+
+.cn-header {
+    margin-top: 8px;
+}
+
+.cn-logo {
+    margin-top: 4px;
+}
+
+.cn-sitename {
+    font-size: 1em;
+    position: relative;
+    top: 5px;
+    margin-left: 8px;
+    padding-left: 8px;
+    border-left: 1px solid #7f7f7f;
+}
+
+.cn-header a .cn-sitename {
+    color: #7f7f7f;
+}
+
+.cn-header a:hover, .cn-header a:active, .cn-header a:focus {
+    text-decoration: none;
+}
+
+.cn-header .navbar-toggle {
+    margin-top: 4px;
+    margin-left: 8px;
+    margin-right: 0px;
+}
+
+.usernav {
+    display: inline-block;
+}
+
+@media(min-width: 768px) {
+    .navbar-collapse {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.caret-up {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-bottom: 4px solid #000000;
+  border-right: 4px solid transparent;
+  border-top: 0 dotted;
+  border-left: 4px solid transparent;
+  content: "";
+}
+
+.pagetitle {
+  font-size: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.help-block {
+  font-size: smaller;
+}
+
+.cs-brand .dropdown-menu {
+  margin-left: -15px;
+}
+
+ul.cs-brand {
+  margin-left: 0px;
+}
+
+.deform .select2-choices li {
+  clear: none;
+}
+
+.cs-footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 30px;
+    color: #FFF;
+    padding: 5px 5px 0 0;
+}
+
+#cs-chatbutton {
+    position: fixed;
+    right: 1em;
+    bottom: 2em;
+}
+
+#cs-chatbutton a {
+    display: block;
+    padding: 1em;
+    border-radius: 6em;
+    color: white;
+    font-weight: bold;
+    background: #003d79;
+}
+
+@keyframes cs-progress-pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.1;
+        transform: scale(0.8);
+    }
+}
+
+.cs-in-progress {
+    animation: cs-progress-pulse 0.7s infinite;
+}
+
+.cs-alert {
+  display: flex;
+}
+.cs-alert-icon {
+  font-size: 3em;
+}
+.cs-alert-body {
+  padding-left: 15px;
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Cambium Networks Status - Incident history</title>
+    <link>https://status.cambiumnetworks.com</link>
+    <description>Cambium Networks</description>
+    <pubDate>Wed, 2 Jun 2021 00:00:00 +0000</pubDate>
+    
+<item>
+  <title>Updates to cnMaestro</title>
+  <description>
+  &lt;p&gt;&lt;small&gt;Jun &lt;var data-var=&#039;date&#039;&gt; 2&lt;/var&gt;, &lt;var data-var=&#039;time&#039;&gt;00:00:00&lt;/var&gt; GMT+0&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Identified&lt;/strong&gt; -
+  Maintenance is now in progress..&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Jun &lt;var data-var=&#039;date&#039;&gt; 2&lt;/var&gt;, &lt;var data-var=&#039;time&#039;&gt;00:00:00&lt;/var&gt; GMT+0&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Completed&lt;/strong&gt; -
+  Maintenance has completed successfully..&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Jun &lt;var data-var=&#039;date&#039;&gt; 2&lt;/var&gt;, &lt;var data-var=&#039;time&#039;&gt;00:00:00&lt;/var&gt; GMT+0&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Identified&lt;/strong&gt; -
+  On 2 June 2021 between 0100 and 0300 UTC cnMaestro cloud will be updated. During this time we do not expect any disruption to service, but some devices may disconnect and reconnect..&lt;/p&gt;
+
+  </description>
+  <pubDate>Wed, 2 Jun 2021 00:00:00 +0000</pubDate>
+  <link>https://status.cambiumnetworks.com/maintenance/ckp86nkc49841089kolmppdeilm</link>
+  <guid>https://status.cambiumnetworks.com/maintenance/ckp86nkc49841089kolmppdeilm</guid>
+</item>
+
+<item>
+  <title>Website Update</title>
+  <description>
+  &lt;p&gt;&lt;small&gt;Jul &lt;var data-var=&#039;date&#039;&gt; 8&lt;/var&gt;, &lt;var data-var=&#039;time&#039;&gt;00:00:00&lt;/var&gt; GMT+0&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Identified&lt;/strong&gt; -
+  On 8 July 2021 at 0100 UTC, www.cambiumnetworks.com will be updated. The service may be interrupted for up to 5 minutes..&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Jul &lt;var data-var=&#039;date&#039;&gt; 8&lt;/var&gt;, &lt;var data-var=&#039;time&#039;&gt;00:00:00&lt;/var&gt; GMT+0&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Identified&lt;/strong&gt; -
+  Maintenance is now in progress..&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Jul &lt;var data-var=&#039;date&#039;&gt; 8&lt;/var&gt;, &lt;var data-var=&#039;time&#039;&gt;00:00:00&lt;/var&gt; GMT+0&lt;/small&gt;&lt;br&gt;&lt;strong&gt;Completed&lt;/strong&gt; -
+  Maintenance has completed successfully..&lt;/p&gt;
+
+  </description>
+  <pubDate>Thu, 8 Jul 2021 00:00:00 +0000</pubDate>
+  <link>https://status.cambiumnetworks.com/maintenance/ckp875z3h11867979kolzutul5oi</link>
+  <guid>https://status.cambiumnetworks.com/maintenance/ckp875z3h11867979kolzutul5oi</guid>
+</item>
+
+  </channel>
+  </rss>

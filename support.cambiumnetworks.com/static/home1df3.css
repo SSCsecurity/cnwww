@@ -1,0 +1,69 @@
+.cn-category {
+  text-align: center;
+  margin-bottom:15px;
+}
+.cn-category h2 {
+  font-size: 1.5em;
+}
+.cn-category img {
+  height: 40px;
+}
+.cn-category a p {
+  color: black;
+}
+.cn-category a {
+  text-decoration: none;
+}
+.hero {
+  position: relative;
+  text-align: center;
+  clear: both;
+  margin-bottom: 2em;
+  padding: 4em 0.5em;
+  background-image: url(https://support.cambiumnetworks.com/static/img/herotrain.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+.hero h1 {
+  font-size: 55px;
+  letter-spacing: 1.6px;
+}
+.hero p {
+  font-size: 21px;
+  letter-spacing: 1.6px;
+  font-weight: 300;
+}
+.hero .content {
+  color: #FFF;
+}
+.search {
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.search input {
+    height: 3em;
+    width: 100%;
+    color: black;
+    border-radius: 5px;
+    border-color: #ccc;
+    padding: 0 20px;
+}
+
+.search input[type="submit"] {
+    display: none;
+}
+.search::after {
+    content: "\1F50D";
+    font-family: "entypo";
+    font-size: 30px;
+    line-height: 0;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    top: 50%;
+    z-index: 1;
+    color: #666;
+}
